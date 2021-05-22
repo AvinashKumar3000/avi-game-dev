@@ -32,13 +32,46 @@
 			text-transform: uppercase;
 			width: 200px;
 		}
+		.down-btn {
+			font-size: 15px;
+			width: 300px;
+			background-color: coral;
+		}
+		.controls {
+			position: relative;
+			font-size:x-large;
+			padding: 20px;
+			background-color: rgba(0, 0, 0, 0.384);
+			border-radius: 10px;
+			color: black;
+		}
+		.call-bg {
+			background-image: url('./images/3995243.jpg');
+		}
+		
+		.main-sec {
+			background-color: rgba(255, 255, 255, 0);
+		}
+		.parallax {
+			/* The image used */
+			background-image: url("./images/cosmic-shining-abstract-background-260nw-1049450375.jpg");
+
+			/* Set a specific height */
+			min-height: 500px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 	</style>
 </head>
-<body>
+<body class="parallax">
 <header>
 	<div id="homeFullScreen">
 		<div class="header-text">
-			<h1>avi-game dev</h1>
+			<h1><img src="./images/logo.png" alt="logo" /></h1>
 			<div class="vertical-line"></div>
 			<p>
 				GAME DEVELOPER AND SOFTWARE ENGINEER
@@ -51,7 +84,7 @@
 
 <!-- Feature -->
 
-<section class="feature" style="margin-top: 5%;">
+<section class="main-sec feature" style="margin-top: 5%;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-sm-6">
@@ -62,12 +95,36 @@
 						corona is taken to be serious hence only given with one life.
 					</p>
 					<p>
-						<a href="./out/index.html">
+						<a target="_blank" href="./out/index.html">
 							<button>
 								play now
 							</button>
 						</a>
+						
 					</p>
+					<p>
+						<a href="./downloads/corona-game-linux-pack.zip">
+							<button class="down-btn">
+								download for linux
+							</button>
+						</a>
+						<a href="./downloads/corona-game-win-pack.zip">
+							<button class="down-btn">
+								download for windows
+							</button>
+						</a>
+					</p>
+					<div class="controls">
+						<p>
+							<h4> CONTORLS</h4>
+							<ul>
+								<li> w - jump </li>
+								<li> a - left </li>
+								<li> d - right </li>
+								<li> k - throw axe</li>
+							</ul>
+						</p>
+					</div>
 				</div>
 			</div><!-- End col-md-6 -->
 			<div class="col-md-6 col-sm-6 nopadding">
@@ -104,24 +161,26 @@
 </section>
 
 <!-- Call to Action -->
-<section class="call-top-action text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h1>LEAVE YOUR FEED BACK</h1>
-				<p>Leave your feed back in my instagram post.
-				<br />
-				It my first game, Instagram account link given below. </p>
-				<span>STAY HOME, STAY SAFE</span>
-			</div><!-- End col-md-12 -->
-		</div><!-- End row -->
-	</div><!-- End container -->
-</section>
-
+<div class="call-bg">
+	<section class="call-top-action text-center">
+		<div class="">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>LEAVE YOUR FEED BACK</h1>
+					<p>Leave your feed back in my instagram post.
+					<br />
+					It my first game, Instagram account link given below. </p>
+					<span>STAY HOME, STAY SAFE</span>
+				</div><!-- End col-md-12 -->
+			</div><!-- End row -->
+		</div><!-- End container -->
+	</section>
+	
+</div>
 <!-- Footer -->
 <footer>
 	<ul class="in-line">
-		<li><a href="https://www.instagram.com/p/CPIu2yVjvZh/?utm_source=ig_web_copy_link"><span><i class="fa fa-instagram"></i></span></a></li>
+		<li><a target="_blank" href="https://www.instagram.com/p/CPKckgHD93u/?utm_source=ig_web_copy_link"><span><i class="fa fa-instagram"></i></span></a></li>
 	
 	</ul>
 	
